@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validar</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  
+  <form id="formulario" action="pagina.html" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" class="hideErrorOnkeydown">
+    <span class="errormessage" id="nombre-error"></span>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" class="hideErrorOnkeydown">
+    <span class="errormessage" id="email-error"></span>
+    <br>
+    <label for="categoria">Categoría:</label>
+    <select id="categoria" name="categoria" class="hideErrorOnFoucs">
+        <option value="">Seleccione una opción</option>
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+    </select>
+    <span class="errormessage" id="categoria-error"></span>
+    <br>
+    <input type="checkbox" id="terminos" name="terminos" class="hideErrorOnFoucs">
+    <label for="terminos" class="labelCheck">Acepto los términos y condiciones</label>
+    <div class="errormessage" id="terminos-error"></div>
+    <br>
+    <button type="submit">Enviar</button>
+    <dile-inline-feedback id="mensajeError"></dile-inline-feedback>
+</form>
+
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>
