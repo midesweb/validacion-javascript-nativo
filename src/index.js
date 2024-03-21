@@ -1,3 +1,4 @@
+import './style.css';
 import '@dile/dile-inline-feedback/dile-inline-feedback.js';
 
 document.addEventListener("DOMContentLoaded", function() {
